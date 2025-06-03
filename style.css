@@ -354,3 +354,32 @@ footer {
     font-size: 2rem;
   }
 }
+/* ================================
+   Ajustes para telas de celular
+   ================================ */
+@media (max-width: 768px) {
+  /* Faz o container do header (logo + menu) empilhar verticalmente */
+  .header-content {
+    flex-direction: column;       /* empilha em vez de alinhar lado a lado */
+    align-items: center;          /* centraliza logo e menu */
+  }
+
+  /* Dá um espaçamento entre a logo e o menu (para “respirar”) */
+  nav {
+    margin-top: 0.5rem;           /* distância entre logo e links */
+    width: 100%;                  /* menu ocupa toda a largura */
+    text-align: center;           /* centraliza cada link */
+  }
+
+  /* Faz cada link ficar em linha separada e com espaçamento */
+  nav a {
+    display: block;               /* cada link ocupa uma “linha inteira” */
+    margin: 0.5rem 0;             /* espaço acima e abaixo de cada link */
+    margin-left: 0;               /* remove recuo lateral que existia */
+  }
+
+  /* (Opcional) Reduz um pouco o tamanho da logo, se estiver muito grande */
+  .logo img {
+    width: 140px;                 /* ajuste conforme necessário */
+  }
+}
