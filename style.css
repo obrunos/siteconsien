@@ -383,3 +383,26 @@ footer {
     width: 140px;                 /* ajuste conforme necessário */
   }
 }
+/* ----------------------------------------
+   Botão flutuante do WhatsApp (apenas ícone)
+   ---------------------------------------- */
+.whatsapp-float {
+  position: fixed;       /* fixa na tela */
+  width: 50px;           /* largura do ícone */
+  height: 50px;          /* altura do ícone */
+  bottom: 20px;          /* distância do rodapé */
+  right: 20px;           /* distância da lateral direita */
+  z-index: 1000;         /* para ficar acima de outros elementos */
+  cursor: pointer;       /* altera o cursor para “clicável” */
+}
+
+.whatsapp-float img {
+  width: 100%;           /* faz o <img> ocupar toda a largura */
+  height: 100%;          /* faz ocupar toda a altura */
+  object-fit: contain;   /* mantém proporção sem distorcer */
+}
+
+/* (Opcional) Pequena sombra para destacar o ícone */
+.whatsapp-float:hover {
+  filter: drop-shadow(0 0 5px rgba(0,0,0,0.3));
+}
