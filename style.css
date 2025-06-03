@@ -388,10 +388,10 @@ footer {
    ---------------------------------------- */
 .whatsapp-float {
   position: fixed;       /* fixa na tela */
-  width: 50px;           /* largura do ícone */
-  height: 50px;          /* altura do ícone */
-  bottom: 20px;          /* distância do rodapé */
-  right: 20px;           /* distância da lateral direita */
+  width: 150px;           /* largura do ícone */
+  height: 150px;          /* altura do ícone */
+  bottom: 40px;          /* distância do rodapé */
+  right: 40px;           /* distância da lateral direita */
   z-index: 1000;         /* para ficar acima de outros elementos */
   cursor: pointer;       /* altera o cursor para “clicável” */
 }
